@@ -44,4 +44,4 @@ tags:
 ![img](https://github.com/caedmom/caedmom.github.io/blob/master/img/in-post/20160912-compile-unreal-engine-4/7%20debug-start-new-instance.png?raw=true)
 ![img](https://github.com/caedmom/caedmom.github.io/blob/master/img/in-post/20160912-compile-unreal-engine-4/7%202-debug.png?raw=true)
 
-* 在调试完成后自动启动编辑器
+* 在调试完成后自动启动编辑器（编译后的引擎大约36GB）
