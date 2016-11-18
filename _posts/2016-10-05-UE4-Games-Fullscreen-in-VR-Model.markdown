@@ -49,6 +49,7 @@ tags:
 设置配置文件在工程目录里面找到 Config 文件夹在里面添加一个配置文件并命名为 DefaultGameUserSettings.ini
 
 * 把如下内容贴到刚刚创建的配置文件里面：
+`ini`
 <pre><code>
 [/Script/Engine.GameUserSettings]
 bUseVSync=False
