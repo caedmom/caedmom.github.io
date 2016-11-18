@@ -34,6 +34,7 @@ tags:
 ![img](https://github.com/caedmom/caedmom.github.io/blob/master/img/in-post/2016-10-05-UE4-games-fullscreen-in-VR-model/4%20fullscreen.png?raw=true)
 
 * 注：如果只是修改坐标（0.0f,0.3f,0.4f,0.4f）,ViewportWidth和ViewHeight不变，则只能将视野加宽，无法去掉黑边。
+
 ---
 
 ## 2. 其它
