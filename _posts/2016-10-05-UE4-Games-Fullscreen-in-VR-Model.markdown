@@ -33,6 +33,7 @@ tags:
 * 编译版本效果图，现在在虚拟现实模式下预览就可以全屏了。
 ![img](https://github.com/caedmom/caedmom.github.io/blob/master/img/in-post/2016-10-05-UE4-games-fullscreen-in-VR-model/4%20fullscreen.png?raw=true)
 
+* 注：如果只是修改坐标（0.0f,0.3f,0.4f,0.4f）,ViewportWidth和ViewHeight不变，则只能将视野加宽，无法去掉黑边。
 ---
 
 ## 2. 其它
@@ -47,7 +48,7 @@ tags:
 * 配置工程目录
 设置配置文件在工程目录里面找到 Config 文件夹在里面添加一个配置文件并命名为 DefaultGameUserSettings.ini
 
-把如下内容贴到刚刚创建的配置文件里面：
+* 把如下内容贴到刚刚创建的配置文件里面：
 <pre><code>
 [/Script/Engine.GameUserSettings]
 bUseVSync=False
