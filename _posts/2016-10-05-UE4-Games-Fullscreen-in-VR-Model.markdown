@@ -4,7 +4,7 @@ title:      "UE4-Games Fullscreen in VR Model"
 subtitle:   "How to Set UE4-Games Fullscreen in VR Model"
 date:       2016-10-05 12:00:00
 author:     "Caedmom"
-header-img: "img/in-post/default-bg.jpg"
+header-img: "img/in-post/unreal-engine-4-bg.png"
 tags:
     - Unreal Engine 4
     - VR
