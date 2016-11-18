@@ -52,8 +52,7 @@ tags:
 * 把如下内容贴到刚刚创建的配置文件里面：
 
 `ini`
-<pre><code>
-[/Script/Engine.GameUserSettings]
+<pre><code>[/Script/Engine.GameUserSettings]
 bUseVSync=False
 //ResolutionSizeX=1920
 //ResolutionSizeY=1080
