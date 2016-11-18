@@ -16,10 +16,12 @@ tags:
  
 ## 导出序列和导出视频有什么区别？
 * 导出视频就相当于在录屏，最终输出的是视频，那么你录制运行时如果卡顿的话，都会被录制下来，而导出序列最终输出的是图片序列，录制运行时候就算卡顿不是很流畅，但是序列是严格按照摄像机动画设定的秒数去记录每一帧的，所以导入到后期软件做合成的时候，动画播放时流畅的。
- 
+
+---
+
 ## 下面开始讲解UE4 Matinee录制视频
 
-### Matinee相机设置
+### 1. Matinee相机设置
  
 1.1. 过场动画>>添加Matinee
 ![img](/img/in-post/UE4-Export-Videos-By-Matinee/1 add-atinee.png)
@@ -54,7 +56,7 @@ tags:
 参考资料：
 https://www.youtube.com/watch?v=r9Rz_-Q5ZyY&index=26&list=PLshGCQ6KS0hF3PxMGzWiJ5ZaPxwKrOm5I
  
- 
+---
  
 ### 2.输出视频蓝图
 2.1 选中刚才编辑的MatineeActor,在细节面板中勾选Play on Level Load,在运行程序时，首先会运行这段动画。
@@ -74,10 +76,14 @@ https://www.youtube.com/watch?v=r9Rz_-Q5ZyY&index=26&list=PLshGCQ6KS0hF3PxMGzWiJ
 参考资料：
 https://www.youtube.com/watch?v=wgk9hUtC-ig&list=PLshGCQ6KS0hF3PxMGzWiJ5ZaPxwKrOm5I&index=27
  
+---
+
 ### 3.导出视频
 * 渲染视频设置>>捕获视频
 
 ![img](/img/in-post/UE4-Export-Videos-By-Matinee/17 capture-video-and-output.png)
+
+---
 
 <iframe frameborder="0" width="100%" height="498" src="https://v.qq.com/iframe/player.html?vid=m034717et3g&tiny=0&auto=0" allowfullscreen></iframe>
 

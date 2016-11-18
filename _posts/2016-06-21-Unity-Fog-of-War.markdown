@@ -43,4 +43,6 @@ Enemy:添加 FOW Renderers.cs –控制阴影中是否可见
 
 ![img](/img/in-post/20160622fog-of-war/fog-of-war-demo.gif)
 
+---
+
 最后附上插件下载地址：链接：http://pan.baidu.com/s/1c4uwX4 密码：yaew，感谢支持！
