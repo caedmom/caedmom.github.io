@@ -65,8 +65,8 @@ C:\Windows\SysWOW64目录下。
 
 ![img](/img/in-post/20160622teapot/teapot.jpg)
 
-<pre><code>
 'c++'
+<pre><code>
 #include "stdafx.h"
 #include<gl/glut.h>
 void init(void)
