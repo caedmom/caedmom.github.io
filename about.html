@@ -1,0 +1,114 @@
+---
+layout: page
+title: "About"
+description: "Who is Caedmom"
+header-img: "img/about-bg.jpg"
+---
+
+<!-- Language Selector -->
+<select onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
+    <option value="0" selected> 中文 </option>
+    <option value="1"> English </option>
+</select>
+
+<!-- Chinese Version -->
+<div class="zh">
+    <p>Hi，我是<strong>陈东林</strong>，在读研究生，虚拟现实方向，将于2017年12月毕业。过去几年一直在做unity，webgl相关研发工作，现在主要是做Unreal Engine 4 的HTC VR 研发工作。</p>
+
+    <p>爱好写shader、计算机图形学、写博客、看书；经常在<a href="http://www.manew.com/forum-wiki-1.html" target="_blank">蛮牛译馆</a>上学习和分享shader；之前一直在<a href="http://www.manew.com/home.php?mod=space&uid=71862&do=thread&view=me&from=space" target="_blank">游戏蛮牛</a>上分享技术博客。个人翻译的技术书籍《Blueprints Visual Scripting for Unreal Engine》预计将于2016年由人民邮电出版社出版发售。</p>
+
+    <p>更多关于我的论文和项目，可以戳我的<a href="https://caedmom.github.io/portfolio/">作品集</a>。</p>
+
+    <p>联系方式：caedmom.chen # foxmail DOT com</p>
+</div>
+
+<!-- English Version -->
+<div class="en">
+    <p>Hi, my name is <strong>Caedmom Chen</strong>.  My research interest is computer graphics, including modeling, rendering, virtual reality(VR) and augmented reality (AR).</p>
+
+    <p>I like sharing shaders in <a href="http://www.manew.com/forum-wiki-1.html" target="_blank">Manew.com</a> and writing <a href="http://www.manew.com/home.php?mod=space&uid=71862&do=thread&view=me&from=space" target="_blank">blogs</a>. In 2015, I translate a book naming <i>Blueprints Visual Scripting for Unreal Engine</i>, which will be published by the People's Posts and Telecommunications Press（Posts &amp; Telecom Press）in 2016.</p>
+
+    <p>For more about my publications and projects, please visit my <a href="https://caedmom.github.io/portfolio/">Portfolio</a>.</p>
+
+    <p>Contact me：caedmom.chen # foxmail DOT com</p>
+</div>
+
+<!-- Handle Language Change -->
+<script type="text/javascript">
+    var $zh = document.querySelector(".zh");
+    var $en = document.querySelector(".en");
+    function onLanChange(index){
+        if(index == 0){
+            $zh.style.display = "block";
+            $en.style.display = "none";
+        }else{
+            $en.style.display = "block";
+            $zh.style.display = "none";
+        }
+    }
+    onLanChange(0);
+</script>
+
+
+
+{% if site.duoshuo_username %}
+<!-- 多说评论框 start -->
+<div class="comment">
+    <div class="ds-thread"
+    {% if site.duoshuo_username == "huxblog" %}
+        data-thread-id="1187623191091085319"
+    {% else %}
+        data-thread-key="{{site.duoshuo_username}}/about"
+    {% endif %}
+
+    data-title="{{page.title}}"
+    data-url="{{site.url}}/about/"></div>
+</div>
+<!-- 多说评论框 end -->
+
+<!-- Duoshuo hacking -->
+<input id="dsUser" type="hidden" value="{{site.duoshuo_username}}"  />
+
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    // dynamic User hacking by Hux
+    var _user = document.getElementById('dsUser').value;
+    // duoshuo comment query.
+    var duoshuoQuery = {short_name: _user };
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0]
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+</script>
+<!-- 多说公共JS代码 end -->
+{% endif %}
+
+
+{% if site.disqus_username %}
+<!-- disqus 评论框 start -->
+<div class="comment">
+    <div id="disqus_thread" class="disqus-thread">
+
+    </div>
+</div>
+<!-- disqus 评论框 end -->
+
+<!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = "{{site.disqus_username}}";
+    var disqus_identifier = "{{site.disqus_username}}/{{page.url}}";
+    var disqus_url = "{{site.url}}{{page.url}}";
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<!-- disqus 公共JS代码 end -->
+{% endif %}
