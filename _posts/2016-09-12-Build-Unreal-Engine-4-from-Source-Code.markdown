@@ -4,7 +4,7 @@ title:      "Build Unreal Engine 4"
 subtitle:   "Build Unreal Engine 4 from Source Code"
 date:       2016-09-12 12:00:00
 author:     "Caedmom"
-header-img: "img/in-post/default-bg.jpg"
+header-img: "img/in-post/unreal-engine-4-bg.jpg"
 tags:
     - Unreal Engine 4
 ---

@@ -4,7 +4,7 @@ title:      "UE4 Export Videos By Matinee"
 subtitle:   "Export Videos From Unreal Engine 4 By Matinee"
 date:       2016-08-09 12:00:00
 author:     "Caedmom"
-header-img: "img/in-post/default-bg.jpg"
+header-img: "img/in-post/unreal-engine-4-bg.jpg"
 tags:
     - Unreal Engine 4
     - Matinee
