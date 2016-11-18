@@ -17,21 +17,8 @@ tags:
 ## 导出序列和导出视频有什么区别？
 * 导出视频就相当于在录屏，最终输出的是视频，那么你录制运行时如果卡顿的话，都会被录制下来，而导出序列最终输出的是图片序列，录制运行时候就算卡顿不是很流畅，但是序列是严格按照摄像机动画设定的秒数去记录每一帧的，所以导入到后期软件做合成的时候，动画播放时流畅的。
  
-下面开始讲解UE4 Matinee录制视频
- 
-## 1.过场动画>>添加Matinee
- 
-1. 添加Matinee过场动画
-2. 进入MatineeActor界面，点击Curves，将最大化轨迹（Tracks）界面
-3. 调整工作界面
-4. 最大化轨迹标签效果如下图；时间轴可以调整，点击snap可以对齐，对齐设置中可以预设每次调整时间轴时的步长。
-5. 调整时间轴步长
-6. 在关卡中将相机调整到合适位置和角度（这一步很重要，将决定录制的视频的起始画面），回到MatineeActor添加摄像机组。
- 
- 
-## 2.重命名摄像机组
+## 下面开始讲解UE4 Matinee录制视频
 
-<<<<<<< HEAD
 ### Matinee相机设置
  
 1.1. 过场动画>>添加Matinee
@@ -63,31 +50,12 @@ tags:
 
 1.11 添加DirGroup和关键帧，切换相机1和2.
 ![img](/img/in-post/UE4-Export-Videos-By-Matinee/11 add-dirgroup-and-key-frame.png)
-=======
- 
-
- 
-* 现在可以看到添加的摄像机和预览视角
-
- 
-* 选中关键帧
-
-* 将时间标尺移到5秒处
-
-* 在关卡中移动相机，添加关键帧
-
-* 预览效果。（相机的视野也可以修改）
- 
-* 添加DirGroup和关键帧，切换相机1和2.
-
->>>>>>> parent of 3dda9ae... blog pictures
  
 参考资料：
 https://www.youtube.com/watch?v=r9Rz_-Q5ZyY&index=26&list=PLshGCQ6KS0hF3PxMGzWiJ5ZaPxwKrOm5I
  
  
  
-<<<<<<< HEAD
 ### 2.输出视频蓝图
 2.1 选中刚才编辑的MatineeActor,在细节面板中勾选Play on Level Load,在运行程序时，首先会运行这段动画。
 ![img](/img/in-post/UE4-Export-Videos-By-Matinee/13 output-settings.png)
@@ -102,31 +70,11 @@ https://www.youtube.com/watch?v=r9Rz_-Q5ZyY&index=26&list=PLshGCQ6KS0hF3PxMGzWiJ
 ![img](/img/in-post/UE4-Export-Videos-By-Matinee/15 jump-out-record.png)
 * 进阶蓝图 
 ![img](/img/in-post/UE4-Export-Videos-By-Matinee/16 advanced-blueprint.jpg)
-=======
-## 2.输出视频蓝图
-* 选中刚才编辑的MatineeActor,在细节面板中勾选Play on Level Load,在运行程序时，首先会运行这段动画。
-
- 
-* 设置玩家默认起点
-
- 
-* 在动画结束后，可以到一个比较好的位置重新开始。
-
- 
-* 如果我们仅仅是为了录制视频，那么就需要在动画结束后停止而不进入程序。下面在蓝图中设置以便退出游戏。
-
- 
- 
- 
- 
- 
-
->>>>>>> parent of 3dda9ae... blog pictures
  
 参考资料：
 https://www.youtube.com/watch?v=wgk9hUtC-ig&list=PLshGCQ6KS0hF3PxMGzWiJ5ZaPxwKrOm5I&index=27
  
-## 3.导出视频
+### 3.导出视频
 * 渲染视频设置>>捕获视频
 
 ![img](/img/in-post/UE4-Export-Videos-By-Matinee/17 capture-video-and-output.png)
