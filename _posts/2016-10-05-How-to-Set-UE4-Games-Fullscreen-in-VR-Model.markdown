@@ -10,39 +10,57 @@ tags:
 	- VR
 ---
 
-## 1. 资源下载与操作
+## 1. 重新编译引擎
 
 ---
 
-* 1.1. 打开EpicGames的github页面，下载zip文件（大约184MB）
-![img](https://github.com/caedmom/caedmom.github.io/blob/master/img/in-post/20160912-compile-unreal-engine-4/0%20download-zip.jpg?raw=true)
+* 编译和非编译的最大区别在于，你可以对UE4的底层源码进行修改，添加你自己的设置，如果这样不明白的话，举个例子。就是UE4 VR预览模式一直以来都是两边是黑色的，我们无法去改动，这是官方下载的非编译版的问题。因为它不能修改源码，所以就算你知道哪里有问题，也不能改动。
 
-* 1.2. 解压zip文件，点击运行`Setup.bat`
-![img](https://github.com/caedmom/caedmom.github.io/blob/master/img/in-post/20160912-compile-unreal-engine-4/1%20click-setup.bat.gif?raw=true)
+* 而编译版呢，区别在于，我知道哪里出问题了，我就可以在那里进行改动，就说回这个VR模式，黑边的问题，编译后的文件夹中，找到UE4.slh，打开，我们搜索  SteamVRRender.Cpp，找到SteamVRRender.cpp文件。
+![img](https://github.com/caedmom/caedmom.github.io/blob/master/img/in-post/2016-10-05-UE4-games-fullscreen-in-VR-model/0%20find-cpp-file.png?raw=true)
 
-* 1.3. 检测和更新依赖项（大约1-2小时）
-![img](https://github.com/caedmom/caedmom.github.io/blob/master/img/in-post/20160912-compile-unreal-engine-4/2%20update-dependencies.gif?raw=true)
+* 找到要修改的代码段
+![img](https://github.com/caedmom/caedmom.github.io/blob/master/img/in-post/2016-10-05-UE4-games-fullscreen-in-VR-model/1%20source-code.png?raw=true)
 
-* 1.4. 生成解决方案
-![img](https://github.com/caedmom/caedmom.github.io/blob/master/img/in-post/20160912-compile-unreal-engine-4/3%20click-generate-project-files.bat.gif?raw=true)
+* 修改代码
+![img](https://github.com/caedmom/caedmom.github.io/blob/master/img/in-post/2016-10-05-UE4-games-fullscreen-in-VR-model/2%20modify-source-code.png?raw=true)
+
+* 然后在第一张图的列表中找到UE4，右键出现菜单后，选择“生成”，再然后点击“本地Windows调试器”，此过程结束后将自动打开编译好的UE4editor。（可参考上一篇“Build Unreal Engine 4”）
+
+* 未编译版本效果图
+![img](https://github.com/caedmom/caedmom.github.io/blob/master/img/in-post/2016-10-05-UE4-games-fullscreen-in-VR-model/3%20VR-model-view-with-black-.png?raw=true)
+
+* 编译版本效果图，现在在虚拟现实模式下预览就可以全屏了。
+![img](https://github.com/caedmom/caedmom.github.io/blob/master/img/in-post/2016-10-05-UE4-games-fullscreen-in-VR-model/4%20fullscreen.png?raw=true)
 
 ---
 
-## 2. 编译引擎
+## 2. 其它
 
 ---
 
-* 2.1 双击 UE4.sln 文件，在 Visual Studio 中加载所有项目。
-![img](https://github.com/caedmom/caedmom.github.io/blob/master/img/in-post/20160912-compile-unreal-engine-4/3%20click-generate-project-files.bat.gif?raw=true)
+* 如果还未全屏，可能还需要在UE4编辑器中进行设置。
 
-* 2.2 将方案的配置选为 Development Editor，将方案的平台选为 Win64.
-![img](https://github.com/caedmom/caedmom.github.io/blob/master/img/in-post/20160912-compile-unreal-engine-4/5%20set-dev-editor-and-win64.png?raw=true)
+* 打开关卡蓝图
+![img](https://github.com/caedmom/caedmom.github.io/blob/master/img/in-post/2016-10-05-UE4-games-fullscreen-in-VR-model/5%20level-blueprint.png?raw=true)
 
-* 2.3 右键点击 UE4 并选择 Build（根据配置不同，耗时约20分钟-2小时），引擎编译完成后，将默认启动项目设置为 UE4。
-![img](https://github.com/caedmom/caedmom.github.io/blob/master/img/in-post/20160912-compile-unreal-engine-4/6%20build-and-set-start-project.png?raw=true)
+* 配置工程目录
+设置配置文件在工程目录里面找到 Config 文件夹在里面添加一个配置文件并命名为 DefaultGameUserSettings.ini
 
-* 2.4 调试项目
-![img](https://github.com/caedmom/caedmom.github.io/blob/master/img/in-post/20160912-compile-unreal-engine-4/7%20debug-start-new-instance.png?raw=true)
-![img](https://github.com/caedmom/caedmom.github.io/blob/master/img/in-post/20160912-compile-unreal-engine-4/7%202-debug.png?raw=true)
+把如下内容贴到刚刚创建的配置文件里面：
+<pre><code>
+[/Script/Engine.GameUserSettings]
+bUseVSync=False
+//ResolutionSizeX=1920
+//ResolutionSizeY=1080
+//LastUserConfirmedResolutionSizeX=1920
+//LastUserConfirmedResolutionSizeY=1080
+WindowPosX=-1
+WindowPosY=-1
+bUseDesktopResolutionForFullscreen=True
+FullscreenMode=0
+LastConfirmedFullscreenMode=0
+Version=5
+</code></pre>
 
-* 在调试完成后自动启动编辑器
+---
