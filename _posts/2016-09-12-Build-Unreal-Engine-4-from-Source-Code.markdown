@@ -37,7 +37,7 @@ tags:
 * 2.2 将方案的配置选为 Development Editor，将方案的平台选为 Win64.
 ![img](https://github.com/caedmom/caedmom.github.io/blob/master/img/in-post/20160912-compile-unreal-engine-4/5%20set-dev-editor-and-win64.png?raw=true)
 
-* 2.3 右键点击 UE4 并选择 Build（根据配置不同，耗时约20分钟-2小时），引擎编译完成后，将默认启动项目设置为 UE4。
+* 2.3 右键点击 UE4 并选择 Build（根据配置不同，耗时约20分钟-2小时，如果改动了其中的代码，请点击重新生成），引擎编译完成后，将默认启动项目设置为 UE4。
 ![img](https://github.com/caedmom/caedmom.github.io/blob/master/img/in-post/20160912-compile-unreal-engine-4/6%20build-and-set-start-project.png?raw=true)
 
 * 2.4 调试项目
