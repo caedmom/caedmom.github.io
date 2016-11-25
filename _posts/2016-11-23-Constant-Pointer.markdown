@@ -7,11 +7,12 @@ author:     "Caedmom"
 header-img: "img/in-post/default-bg.jpg"
 tags:
     - C++
-	- Pointer
+    - Pointer
 ---
 
 
 ## 1. 二级常量指针作形参的传参问题
+---
 
 * 一个函数的形参为指向常量的指针，比如：`const int* `给它传递`int*`的参数，编译是可以通过的，不需强制转换。 
 
