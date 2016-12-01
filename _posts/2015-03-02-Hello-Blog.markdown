@@ -19,7 +19,7 @@ tags:
 
 如果你也想自己搭建一个个人博客，我可以列举一些链接：
 
-* https://caedmom.github.io/2016/04/02/Build-Your-Github-Blog/
+* https://caedmom.github.io/2015/04/02/Build-Your-Github-Blog/
 
 后面我会写一些经验给大家，分享如何使用jekyll+github搭建博客。
 
