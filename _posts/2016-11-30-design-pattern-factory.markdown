@@ -57,8 +57,8 @@ tags:
 `C++` 
 
 ---
-* 代码片断 1： `Product.h`
-<pre><code>//Product.h
+<pre><code>//* 代码片断 1： `Product.h`
+//Product.h
 #ifndef _PRODUCT_H_
 #define _PRODUCT_H_
 class Product
@@ -80,9 +80,10 @@ private:
 #endif //~_PRODUCT_H_
 </code></pre>
 
----
-* 代码片断 2： `Product.cpp`
-<pre><code>//Product.cpp
+
+<pre><code>//* 代码片断 2： `Product.cpp` 
+
+ //Product.cpp
 #include "Product.h"
 #include<iostream>
 using namespace std;
@@ -98,12 +99,14 @@ cout<<"ConcreteProduct...."<<endl;
 }
 ConcreteProduct::~ConcreteProduct()
 {
-}
+} 
+
 </code></pre> 
 
----
-* 代码片断 3： `Factory.h`
-<pre><code>//Factory.h
+
+* 代码片断 3： `Factory.h` 
+
+<pre><code> //Factory.h
 #ifndef _FACTORY_H_
 #define _FACTORY_H_
 class Product;
@@ -125,12 +128,14 @@ Product* CreateProduct();
 protected:
 private:
 };
-#endif //~_FACTORY_H_
+#endif //~_FACTORY_H_ 
+
 </code></pre> 
 
----
-* 代码片断 4： `Factory.cpp`
-<pre><code>//Factory.cpp
+
+* 代码片断 4： `Factory.cpp` 
+
+<pre><code> //Factory.cpp
 #include "Factory.h"
 #include "Product.h"
 #include <iostream>
@@ -151,12 +156,14 @@ ConcreteFactory::~ConcreteFactory()
 Product* ConcreteFactory::CreateProduct()
 {
 return new ConcreteProduct();
-}
+} 
+
 </code></pre> 
 
----
-* 代码片断 5： `main.cpp`
-<pre><code>//main.cpp
+
+* 代码片断 5： `main.cpp` 
+
+<pre><code> //main.cpp
 #include "Factory.h"
 #include "Product.h"
 #include <iostream>
@@ -166,7 +173,6 @@ int main(int argc,char* argv[])
 Factory* fac = new ConcreteFactory();
 Product* p = fac->CreateProduct();
 return 0;
-}
-</code></pre>
+} 
 
----
+</code></pre> 
