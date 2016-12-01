@@ -23,7 +23,7 @@ tags:
 （1）客户端程序员必须知道实际子类的名称（当系统复杂后，命名将是一个很不好处理的问题）；
 （2）程序的扩展性和维护变得越来越困难。 
 
-对于 1.1.1 这种情况，我们经常就是**声明一个创建对象的接口，并封装了对象的创建的过程**。Factory这里类似于一个真正意义上的工厂（生产对象）。第一种情况Factory的结构示意图： 
+* 对于 1.1.1 这种情况，我们经常就是**声明一个创建对象的接口，并封装了对象的创建的过程**。Factory这里类似于一个真正意义上的工厂（生产对象）。第一种情况Factory的结构示意图： 
 ![img](https://github.com/caedmom/caedmom.github.io/blob/master/img/in-post/2016-12-01-design-pattern-factory/Factory1.png?raw=true)
 * **这种Factory模式经常在系统开发中用到**，但这并不是Factory模式的最大威力所在（因为可以通过其他方式解决这个问题）。
 
@@ -33,7 +33,7 @@ tags:
 （1）定义创建对象的接口，封装了对象的创建；  
 （2）使得具体化类的工作延迟到了子类中。 
  
-Factory模式不单是**提供了创建对象的接口**，其中最重要的是**延迟了子类的实例化**（第二种情况），第二种情况Factory的结构示意图： 
+* Factory模式不单是**提供了创建对象的接口**，其中最重要的是**延迟了子类的实例化**（第二种情况），第二种情况Factory的结构示意图： 
 
 ![img](https://github.com/caedmom/caedmom.github.io/blob/master/img/in-post/2016-12-01-design-pattern-factory/Factory2.png?raw=true)
 
