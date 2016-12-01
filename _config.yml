@@ -3,7 +3,7 @@ title: Caedmom Blog
 SEOTitle: Caedmom的博客 | Caedmom Blog
 header-img: img/home-bg.jpg
 email: caedmom.chen@foxmail.com
-description: "喜欢和好奇用计算机产生的一切画面"
+description: "programming"
 keyword: ""
 url: "caedmom.github.io"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
@@ -67,7 +67,7 @@ ba_track_id: 207a182a0a79e8a76bfd02381045166f
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "一只喜欢计算机图形的程序员，爱好写shader、写博客，喜欢用计算机来绘制各种五彩缤纷的画面。"
+sidebar-about-description: "Caedmom,Programmer,interested in computer graphics,data structures,desigh pattern,game engines(unreal engine,unity,etc.)."
 sidebar-avatar: /img/avatar-boy.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
@@ -85,9 +85,6 @@ friends: [
     },{
         title: "Aras Blog",
         href: "http://aras-p.info/blog/"
-    },{
-        title: "Scrawk Blog",
-        href: "http://scrawkblog.com/"
     },{
         title: "Candycat",
         href: "https://candycat1992.github.io/"
