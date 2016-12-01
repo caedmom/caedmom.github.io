@@ -40,17 +40,23 @@ tags:
 * 这种Factory模式不只是为了封装对象的创建，而是要把对象的创建放到子类中实现：Factory中只是提供了对象创建的接口，其实现将放在Factory的子类ConcreteFactory中进行。这是两种Factory模式的结构示意图的区别所在。
 
 ---
-### 讨论：
+### 讨论： 
+
 * Factory模式在实际开发中应用非常广泛，面向对象的系统经常面临着对象创建问题：要创建的类实在是太多了。而Factory提供的**创建对象的接口封装**（第一个功能），以及它**将类的实例化推迟到子类**（第二个功能）都部分地解决了实际问题，采用Factory模式后系统可读性和维护都变得elegant许多。
 * Factory也带来至少以下两个问题： 
 
-（1）如果为每一个具体的ConcreteProduct类的实例化提供一个函数体，那么我们可能不得不在系统中添加了一个方法来处理这个新建的ConcreteProduct，这样Factory的接口永远不可能封闭（Close）。当然我们可以通过创建一个Factory的子类来通过多态来实现这一点，但这也是以新建一个类作为代价的。 
-（2）在实现中我们可以通过参数化工厂方法，寄给FactoryMethod（）传递一个参数用以决定创建哪一个具体的Product。当然也可以通过模板化避免（1）中的子类创建子类，其方法就是将具体Product类作为模板参数，实现起来也很简单。
-* 可以看出，Factory模式对于对象的创建给予开发人员提供了很好的实现策略，但是Factory模式**仅仅局限于一类类**（就是说Product是一类，有一个共同的基类）。
+（1）如果为每一个具体的ConcreteProduct类的实例化提供一个函数体，那么我们可能不得不在系统中添加了一个方法来处理这个新建的ConcreteProduct，这样Factory的接口永远不可能封闭（Close）。当然我们可以通过创建一个Factory的子类来通过多态来实现这一点，但这也是以新建一个类作为代价的。  
+
+（2）在实现中我们可以通过参数化工厂方法，寄给FactoryMethod（）传递一个参数用以决定创建哪一个具体的Product。当然也可以通过模板化避免（1）中的子类创建子类，其方法就是将具体Product类作为模板参数，实现起来也很简单。 
+
+* 可以看出，Factory模式对于对象的创建给予开发人员提供了很好的实现策略，但是Factory模式**仅仅局限于一类类**（就是说Product是一类，有一个共同的基类）。 
+
 * **如果我们要为不同类的类提供一个创建对象的接口，那就要用AbstractFactory了。**
 
 ---
-`C++`
+`C++` 
+
+---
 * 代码片断 1： `Product.h`
 <pre><code>//Product.h
 #ifndef _PRODUCT_H_
@@ -74,6 +80,7 @@ private:
 #endif //~_PRODUCT_H_
 </code></pre>
 
+---
 * 代码片断 2： `Product.cpp`
 <pre><code>//Product.cpp
 #include "Product.h"
@@ -94,7 +101,7 @@ ConcreteProduct::~ConcreteProduct()
 }
 </code></pre> 
 
-
+---
 * 代码片断 3： `Factory.h`
 <pre><code>//Factory.h
 #ifndef _FACTORY_H_
@@ -121,7 +128,7 @@ private:
 #endif //~_FACTORY_H_
 </code></pre> 
 
-
+---
 * 代码片断 4： `Factory.cpp`
 <pre><code>//Factory.cpp
 #include "Factory.h"
@@ -147,7 +154,7 @@ return new ConcreteProduct();
 }
 </code></pre> 
 
-
+---
 * 代码片断 5： `main.cpp`
 <pre><code>//main.cpp
 #include "Factory.h"
@@ -161,3 +168,5 @@ Product* p = fac->CreateProduct();
 return 0;
 }
 </code></pre>
+
+---
