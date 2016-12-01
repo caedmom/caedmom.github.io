@@ -78,10 +78,9 @@ protected:
 private:
 };
 #endif //~_PRODUCT_H_
-</code></pre>
 
 
-<pre><code>//* 代码片断 2： `Product.cpp` 
+//* 代码片断 2： `Product.cpp` 
 
  //Product.cpp
 #include "Product.h"
@@ -101,12 +100,10 @@ ConcreteProduct::~ConcreteProduct()
 {
 } 
 
-</code></pre> 
 
+//* 代码片断 3： `Factory.h` 
 
-* 代码片断 3： `Factory.h` 
-
-<pre><code> //Factory.h
+//Factory.h
 #ifndef _FACTORY_H_
 #define _FACTORY_H_
 class Product;
@@ -130,12 +127,10 @@ private:
 };
 #endif //~_FACTORY_H_ 
 
-</code></pre> 
 
+//* 代码片断 4： `Factory.cpp` 
 
-* 代码片断 4： `Factory.cpp` 
-
-<pre><code> //Factory.cpp
+//Factory.cpp
 #include "Factory.h"
 #include "Product.h"
 #include <iostream>
@@ -158,12 +153,10 @@ Product* ConcreteFactory::CreateProduct()
 return new ConcreteProduct();
 } 
 
-</code></pre> 
 
+//* 代码片断 5： `main.cpp` 
 
-* 代码片断 5： `main.cpp` 
-
-<pre><code> //main.cpp
+//main.cpp
 #include "Factory.h"
 #include "Product.h"
 #include <iostream>
