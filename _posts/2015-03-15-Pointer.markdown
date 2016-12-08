@@ -59,7 +59,7 @@ void main()
 	cout << "phint=" << phint << endl;
 	system("pause");
 }
-</code></pre>
+</code></pre> 
 
 
 ---
