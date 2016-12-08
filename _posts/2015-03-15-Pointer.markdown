@@ -56,7 +56,8 @@ void main()
 	cout << "m=" << m << ",n=" << n << endl;
 	cout << "phint=" << phint << endl;
 	system("pause");
-}</code></pre>
+}
+<pre><code></code></pre>
 
 * 运行结果
 
