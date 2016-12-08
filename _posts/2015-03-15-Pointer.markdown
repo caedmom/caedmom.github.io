@@ -34,6 +34,17 @@ tags:
 ---
 
 `C++`
+<pre><code>const int i=10; 
+const int **p1; 
+int *p2; 
+p1 = &p2; 
+*p1 = &i; 
+*p2 = 20; 
+</code></pre>
+
+* 现在你会发现，作为常量的i的值被修改了。
+
+`C++`
 
 <pre><code> 
 
