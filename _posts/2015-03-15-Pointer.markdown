@@ -34,7 +34,9 @@ tags:
 ---
 
 `C++`
+
 <pre><code> 
+
 #include <iostream>
 using namespace std;
 
@@ -57,8 +59,9 @@ void main()
 	cout << "m=" << m << ",n=" << n << endl;
 	cout << "phint=" << phint << endl;
 	system("pause");
-}
-</code></pre>
+} 
+
+</code></pre> 
 
 * 运行结果
 
