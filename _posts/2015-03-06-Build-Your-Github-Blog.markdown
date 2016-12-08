@@ -2,7 +2,7 @@
 layout:     post
 title:      "Build Your Github Blog"
 subtitle:   "Build Your Github Blog By Jekyll"
-date:       2015-04-02 12:00:00
+date:       2015-03-06 12:00:00
 author:     "Caedmom"
 header-img: "img/in-post/default-bg.jpg"
 tags:
