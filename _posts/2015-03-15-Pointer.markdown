@@ -33,11 +33,10 @@ tags:
 ---
 
 * 运行结果
-
 ![img](https://github.com/caedmom/caedmom.github.io/blob/master/img/in-post/2015-03-15-Pointer/Pointer.png?raw=true)
 
 `C++`
-<pre><code> #include <iostream>
+<pre><code>#include <iostream>
 using namespace std;
 
 void main()
@@ -61,6 +60,3 @@ void main()
 	system("pause");
 } 
 </code></pre> 
-
-
-
