@@ -25,7 +25,6 @@ tags:
 * 专门**用于存放内存单元地址（即指针）的变量**称为指针变量。 
 
 * 引入指针变量的目的是提供一种对变量进行间接访问的手段。指针变量必须先说明后使用。 
-
 ![img](https://github.com/caedmom/caedmom.github.io/blob/master/img/in-post/2015-03-15-Pointer/Pointer0.png?raw=true)
 ---
 
@@ -35,15 +34,10 @@ tags:
 
 * 运行结果
 
----
-
 ![img](https://github.com/caedmom/caedmom.github.io/blob/master/img/in-post/2015-03-15-Pointer/Pointer.png?raw=true)
 
 `C++`
-
-<pre><code> 
-
-#include <iostream>
+<pre><code> #include <iostream>
 using namespace std;
 
 void main()
@@ -66,7 +60,6 @@ void main()
 	cout << "phint=" << phint << endl;
 	system("pause");
 } 
-
 </code></pre> 
 
 
