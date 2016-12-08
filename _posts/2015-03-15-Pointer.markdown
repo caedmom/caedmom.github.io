@@ -36,7 +36,8 @@ tags:
 ---
 
 `C++`
-<pre><code>#include <iostream>
+```C++
+#include <iostream>
 using namespace std;
 
 void main()
@@ -59,7 +60,7 @@ void main()
 	cout << "phint=" << phint << endl;
 	system("pause");
 }
-</code></pre> 
+```
 
 
 ---
