@@ -24,7 +24,7 @@ tags:
 
 * 专门**用于存放内存单元地址（即指针）的变量**称为指针变量。 
 
-* 引入指针变量的目的是提供一种对变量进行间接访问的手段。指针变量必须先说明后使用。 
+* 引入指针变量的目的是**提供一种对变量进行间接访问的手段**。指针变量必须先说明后使用。 
 ![img](https://github.com/caedmom/caedmom.github.io/blob/master/img/in-post/2015-03-15-Pointer/Pointer0.png?raw=true) 
 
 ---
@@ -45,16 +45,17 @@ void main()
 	int m, n, *p1 = &m, *p2 = &n, *phint = NULL;
 	m = 1;
 	n = 2;
-	cout << "*p1=" << *p1 << ",*p2=" << *p2 << endl;
-	cout << "p1=" << p1 << ",p2=" << p2 << endl;
+	cout << "*p1=" << *p1 << ",*p2=" << *p2 << endl; //*p1为取到的内容
+	cout << "p1=" << p1 << ",p2=" << p2 << endl; //p1为内存地址
 	cout << "m=" << m << ",n=" << n << endl;
-	cout << "phint=" << phint << endl;
+	cout << "phint=" << phint << endl; //空指针phint内存地址为（0x）00000000
 
 	*p1 += 3;
 	p2 = p1;
 	*p2 *= 4;
 	phint = p2;
-	cout << "*p1=" << *p1 << ",*p2=" << *p2 << endl;
+	cout << "*p1=" << *p1 << ",*p2=" << *p2 << endl; 
+	//p1 p2指向同一个地址，经过*p2 *= 4操作后，该内存中的数据改变了
 	cout << "p1=" << p1 << ",p2=" << p2 << endl;
 	cout << "m=" << m << ",n=" << n << endl;
 	cout << "phint=" << phint << endl;
