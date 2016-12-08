@@ -26,6 +26,7 @@ tags:
 
 * 引入指针变量的目的是提供一种对变量进行间接访问的手段。指针变量必须先说明后使用。 
 ![img](https://github.com/caedmom/caedmom.github.io/blob/master/img/in-post/2015-03-15-Pointer/Pointer0.png?raw=true)
+
 ---
 
 ## 2. 代码示例
