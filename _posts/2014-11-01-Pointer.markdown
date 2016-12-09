@@ -2,7 +2,7 @@
 layout:     post
 title:      "Pointer"
 subtitle:   "Basic Pointers in Cpp"
-date:       2015-3-15 12:00:00
+date:       2014-11-01 12:00:00
 author:     "Caedmom"
 header-img: "img/in-post/default-bg.jpg"
 tags:

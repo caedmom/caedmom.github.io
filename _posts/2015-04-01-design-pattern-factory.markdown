@@ -2,7 +2,7 @@
 layout:     post
 title:      "Design Pattern - Factory"
 subtitle:   "Creational Pattern"
-date:       2015-12-01 12:00:00
+date:       2015-04-01 12:00:00
 author:     "Caedmom"
 header-img: "img/in-post/default-bg.jpg"
 tags:
