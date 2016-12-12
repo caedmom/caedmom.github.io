@@ -99,10 +99,10 @@ tags:
 ## 代码
 
 ---
-工程链接：https://github.com/caedmom/dEveloper/blob/master/Projects/Unity%20Projects/SlidePictures.rar
+工程链接：https://github.com/caedmom/dEveloper/blob/master/Projects/Unity%20Projects/SlidePictures.rar 
+
 `C#` 
 
----
 <pre><code>//* 代码片断 1：初始代码
 using UnityEngine;
 using System.Collections;
