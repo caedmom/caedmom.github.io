@@ -149,7 +149,7 @@ Samaranch Memorial Museum by HAO Holm Architecture Office.
 
 漫天飘雪的街道，初雪的沉默只手可触，大厦前的夫妇牵着手，看着孩子们在雪中欢乐地玩耍。凯瑟琳·海格尔出演的作品一般都有一个愉快的结局，在大厦和周围演绎一个轻松愉快的故事，场景中包括日落、牧场、公园和各种田园风光。
 
-![img](https://github.com/caedmom/caedmom.github.io/blob/master/img/in-post/20170209-the-art-of-render/19 Love Comes Softly.png?raw=true)
+![img](https://github.com/caedmom/caedmom.github.io/blob/master/img/in-post/20170209-the-art-of-render/19%20Love%20Comes%20Softly.jpg?raw=true)
 
 电影 Love Comes Softly 剧照
 
