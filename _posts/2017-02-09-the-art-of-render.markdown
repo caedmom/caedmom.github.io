@@ -50,7 +50,9 @@ Phoenix Towers by Chetwoods Architects
 
 凤凰塔，武汉（2014设计图，此方案后来被武汉市政府遗弃）
 
-1 The Mad Max | 电影《疯狂的麦克斯》风格.
+---
+
+### 1 The Mad Max | 电影《疯狂的麦克斯》风格.
 
 城市中暗淡的灯光，“城市荒原”等待新的生机的出现，灯光似乎是周围唯一的生命标志。
 
@@ -66,7 +68,9 @@ Park51 by Soma Architects
 
 Park51，纽约曼哈顿
 
-2 The Whodunit | 侦探小说场景风格
+---
+
+### 2 The Whodunit | 侦探小说场景风格
 
 这些渲染图传达着充满威胁的氛围，通过不饱和的图像或使用只有深蓝色和绿色色调的手法来实现。暴风雨的天空、（车身）朦胧的数字和强烈的对比造成张力，将空间变成电影中潜在的犯罪现场。
 
@@ -76,7 +80,9 @@ Park51，纽约曼哈顿
 
 The Quest by Ström Architects
 
-3 The David | 电影《A.I.》大卫风格
+---
+
+### 3 The David | 电影《A.I.》大卫风格
 
 这个风格炫耀了它完美的映射纹理，逼真的草和精确到点的反射，像斯皮尔伯格电影A.I.中的机器人大卫，里面的建筑看起来有点太完美了。
 
@@ -88,7 +94,9 @@ Camellian Opera House by Matteo Cainer Architects
 
 釜山歌剧院[译注2]，韩国釜山
 
-4 Paranormal Activity | 超现实主义风格 [译注3]
+---
+
+### 4 Paranormal Activity | 超现实主义风格 [译注3]
 
 能够完美融入到周围环境的项目几乎不存在。在这些项目中，建筑看起来像梦幻般的回声，由光和记忆而不是混凝土支柱和板块支撑。
 
@@ -98,7 +106,9 @@ Boulders Resort by Diller Scofidio + Renfro
 
 巨石度假村，美国亚利桑那州斯科茨代尔市
 
-5 The Gondry | 米歇尔·冈瑞 [译注4] 风格
+---
+
+### 5 The Gondry | 米歇尔·冈瑞 [译注4] 风格
 
 死板的拼贴技术可能会让人觉得不合时宜，但是拼贴技术每隔一段时间就会火一次。照片、效果图和绘图的组合可以惊人的有效，让人想起了米歇尔·冈瑞独特的视觉风格。最能体现出冈瑞风格的形式，包括独角兽、电影明星、太空船和建筑大师勒·柯布西耶的照片剪影。
 
@@ -108,7 +118,9 @@ Boulders Resort by Diller Scofidio + Renfro
 
 Green Valley by Schmidt Hammer Lassen Architects
 
-6 The Theodore | 电影《她》风格
+---
+
+### 6 The Theodore | 电影《她》风格
 
 这个风格可以是超现实主义风格的子类，但是它的不同之处在于：主要表现建筑的内部。
 
@@ -116,9 +128,9 @@ Green Valley by Schmidt Hammer Lassen Architects
 
 ![img](https://github.com/caedmom/caedmom.github.io/blob/master/img/in-post/20170209-the-art-of-render/16 Le Brassus.png?raw=true)
 
-![img](https://github.com/caedmom/caedmom.github.io/blob/master/img/in-post/20170209-the-art-of-render/17-1 .png?raw=true)
+![img](https://github.com/caedmom/caedmom.github.io/blob/master/img/in-post/20170209-the-art-of-render/17-1%20.jpg?raw=true)
 
-![img](https://github.com/caedmom/caedmom.github.io/blob/master/img/in-post/20170209-the-art-of-render/17-2 .png?raw=true)
+![img](https://github.com/caedmom/caedmom.github.io/blob/master/img/in-post/20170209-the-art-of-render/17-2%20.jpg?raw=true)
 
 
 Le Brassus by BIG
@@ -131,13 +143,17 @@ Samaranch Memorial Museum by HAO Holm Architecture Office.
 
 萨马兰奇纪念馆[译注7]，天津市静海县
 
-7 The Katherine Heigl | 凯瑟琳·海格尔[译注8] 电影风格
+---
+
+### 7 The Katherine Heigl | 凯瑟琳·海格尔[译注8] 电影风格
 
 漫天飘雪的街道，初雪的沉默只手可触，大厦前的夫妇牵着手，看着孩子们在雪中欢乐地玩耍。凯瑟琳·海格尔出演的作品一般都有一个愉快的结局，在大厦和周围演绎一个轻松愉快的故事，场景中包括日落、牧场、公园和各种田园风光。
 
 ![img](https://github.com/caedmom/caedmom.github.io/blob/master/img/in-post/20170209-the-art-of-render/19 Love Comes Softly.png?raw=true)
 
 电影 Love Comes Softly 剧照
+
+---
 
 [译注1]
 
@@ -178,6 +194,12 @@ Samaranch Memorial Museum by HAO Holm Architecture Office.
     凯瑟琳·海格尔（Katherine Heigl），1978年11月24日出生于美国华盛顿特区，模特，演员，制作人。
 1987年开始以儿童模特出道。1992年出演电影处女作《艳夏春夜》，开始转向银幕。1995年出演史蒂芬席格主演的动作影片《暴走潜龙》，该作品被认为是第一部具有海格尔风格（轻喜剧）的作品。2005年因参演的《实习医生格蕾》为观众所熟悉，并获得第59届艾美奖剧情类电视剧最佳女配角。
 
-原文作者：Lidija Grozdanic Jan.20,2017
-原文链接：http://architizer.com/blog/7-most-common-architectural-visualization-styles/
-翻译：caedmom Feb.9,2017（译者适当添加了一些内容）
+---
+
+* 原文作者：Lidija Grozdanic Jan.20,2017 
+
+* 原文链接：http://architizer.com/blog/7-most-common-architectural-visualization-styles/ 
+
+* 翻译：caedmom Feb.9,2017（译者适当添加了一些内容）
+
+---
