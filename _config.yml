@@ -49,11 +49,13 @@ kramdown:
 
 # Duoshuo settings
 #多说分享
-duoshuo_username: caedmom
+#duoshuo_username: caedmom
 # Share component is depend on Comment so we can NOT use share only.
-duoshuo_share: true                     # set to false if you want to use Comment without Sharing
+#duoshuo_share: true                     # set to false if you want to use Comment without Sharing
 
-
+# LiveRe setttings
+# You can get your uid from https://livere.com/insight/myCode (General web site)
+livere_uid: MTAyMC8yODk5MC81NTU5
 
 
 # Analytics settings
